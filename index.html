@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#e7d6ae"><link rel="icon" href="data:,"><title>秋渡 · 纸艺村庄</title>
+</head>
+<body>
+  <main id="world" aria-label="可操纵角色的三维纸艺村庄"></main>
+  <header><h1>秋渡</h1><span>PAPER VILLAGE</span></header>
+  <aside><kbd>W A S D</kbd><span>或方向键移动</span><i></i><kbd>Shift</kbd><span>快走</span><i></i><span>滚轮缩放</span><kbd>Q / E</kbd><span>环绕</span><kbd>R</kbd><span>复位</span></aside>
+  <div id="pad" aria-label="拖动控制方向"><b></b></div>
+  <button id="showMap" aria-haspopup="dialog" aria-controls="map">地图 <kbd>M</kbd></button>
+  <dialog id="map" aria-labelledby="mapTitle">
+    <div class="map-sheet"><h2 id="mapTitle">秋渡 · 村落地图</h2><button aria-label="关闭地图">收起 <kbd>M</kbd></button>
+      <canvas aria-label="秋村已探索地形，红色图钉表示当前位置"></canvas>
+      <footer><span>●  所在位置</span><span>已探索 <output>0</output> 格</span><span>↑ 北</span></footer>
+    </div>
+  </dialog>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
+
